@@ -15,7 +15,6 @@ func sort(unsortedStrings:[String]) -> [String]
     var doSwap = true
     var index = 0
     var swapCount = 0
-    var pass = 0
     repeat
     {
         swapCount = 0
@@ -28,7 +27,6 @@ func sort(unsortedStrings:[String]) -> [String]
             }
             index += 1
         }
-        pass += 1
         index = 0
         if swapCount == 0
         {
