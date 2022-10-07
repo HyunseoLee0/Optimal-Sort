@@ -16,7 +16,7 @@ func sort(unsortedStrings:[String]) -> [String]
     var index = 0
     var swapCount = 0
     var pass = 0
-    while doSwap
+    repeat
     {
         swapCount = 0
         while index + 1 < unsortedArray.count
@@ -34,7 +34,7 @@ func sort(unsortedStrings:[String]) -> [String]
         {
             doSwap = false
         }
-    }
+    } while doSwap
     return unsortedArray
 }
 print("If you're done, then press Control + d")
